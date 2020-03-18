@@ -1,0 +1,6 @@
+version "3"
+services:
+     image:project:$BUILD_TAG
+     build:
+	context: .
+	    dockerfile:Dockerfile
