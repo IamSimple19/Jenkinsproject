@@ -24,6 +24,7 @@ pipeline {
             steps {
                 sh './jenkins/push/push.sh'
             }
+            
             }
 
 
@@ -34,11 +35,6 @@ pipeline {
 
             }
         
-            post {
-                always {
-                    junit 'target/surefire-reports/*.xml'
-                }
-            }
         }
     
     }
